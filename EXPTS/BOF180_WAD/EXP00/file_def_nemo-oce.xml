@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+    <!-- 
+============================================================================================================
+=                                           output files definition                                        =
+=                                            Define your own files                                         =
+=                                         put the variables you want...                                    =
+============================================================================================================
+    -->
+    
+    <file_definition type="one_file" name="@expname@_@freq@_@startdate@_@enddate@" sync_freq="1h" min_digits="4">
+    
+      <file_group id="1h" output_freq="1h"  output_level="10" enabled=".TRUE."> <!-- 1h files -->
+	<file id="file97" name_suffix="_grid_T" description="ocean T grid variables" >
+	  <field field_ref="ssh"          name="sossheig"  operation="instant"  />
+        </file>
+        <file id="file98" name_suffix="_grid_U" description="ocean U grid variables" >
+          <field field_ref="ssu"         name="us"    operation="instant"/>
+        </file>
+        <file id="file99" name_suffix="_grid_V" description="ocean V grid variables" >
+          <field field_ref="ssv"         name="vs"    operation="instant"/>
+        </file>
+        <file id="file57" name_suffix="_tide_T" description="ocean T grid tidal harmonics" >
+          <field field_ref="M2x" />
+          <field field_ref="M2y" />
+        </file>
+        <file id="file58" name_suffix="_tide_U" description="ocean U grid tidal harmonics" >
+          <field field_ref="M2x_u" />
+          <field field_ref="M2y_u" />
+        </file>
+        <file id="file59" name_suffix="_tide_V" description="ocean V grid tidal harmonics" >
+          <field field_ref="M2x_v" />
+          <field field_ref="M2y_v" />
+        </file>
+      </file_group>
+     
+      <file_group id="5d" output_freq="5d"  output_level="10" enabled=".TRUE.">  <!-- 5d files -->  
+	<file id="file1" name_suffix="_grid_T" description="ocean T grid variables" >
+	  <field field_ref="Courant"      name="courant_number"  />
+        </file>
+	<file id="file2" name_suffix="_grid_U" description="ocean U grid variables" >
+          <field field_ref="uoce"         name="vozocrtx"  />
+        </file>
+	<file id="file3" name_suffix="_grid_V" description="ocean V grid variables" >
+          <field field_ref="voce"         name="vomecrty"  /> 
+        </file>
+	<file id="file4" name_suffix="_grid_W" description="ocean W grid variables" >
+          <field field_ref="wi_cff"       name="wi_cff" />
+          <field field_ref="avt"          name="votkeavt" />
+        </file>
+      </file_group>
+
+   </file_definition>
+
