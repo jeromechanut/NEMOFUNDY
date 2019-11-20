@@ -1,1 +1,2 @@
-BIO Bay of Fundy NEMO ocean model configuration
+# NEMOFUNDY
+Repository for BIO Bay of Fundy NEMO configuration
