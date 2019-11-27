@@ -9,4 +9,4 @@ Reference mean sea level is -5m, minimum layer thickness is 20 cm
 ### SSH evolution across Minas Basin, ref level = 0m  
 ![](BOF180_SSH_MINAS_WAD_ref0.gif)
 ### SSH evolution across Minas Basin, ref level = -5m  
-![](BOF180_SSH_MINAS_WAD_ref0.gif)
+![](BOF180_SSH_MINAS_WAD_ref5.gif)
